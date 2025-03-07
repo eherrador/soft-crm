@@ -14,7 +14,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.
 # En este caso, estamos importando el módulo chainlit
 import chainlit as cl
 
-from soft_crm.settings import settings
+from luxa.settings import settings
 
 @cl.on_chat_start
 async def on_chat_start():
