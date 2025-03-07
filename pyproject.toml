@@ -1,7 +1,7 @@
 [project]
 name = "soft-crm"
 version = "0.1.0"
-description = "Add your description here"
+description = "Pequeño CRM basado en multi agentes"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
