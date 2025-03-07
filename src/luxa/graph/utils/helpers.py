@@ -3,10 +3,10 @@ import re
 from langchain_core.output_parsers import StrOutputParser
 from langchain_groq import ChatGroq
 
-from soft_crm.modules.speech import TextToSpeech
-from soft_crm.settings import settings
-from soft_crm.modules.image.text_to_image import TextToImage
-from soft_crm.modules.image.image_to_text import ImageToText
+from luxa.modules.speech import TextToSpeech
+from luxa.settings import settings
+from luxa.modules.image.text_to_image import TextToImage
+from luxa.modules.image.image_to_text import ImageToText
 
 def get_chat_model(temperature: float = 0.7):
     return ChatGroq(

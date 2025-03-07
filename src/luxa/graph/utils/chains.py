@@ -1,8 +1,8 @@
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from pydantic import BaseModel, Field
 
-from soft_crm.core.prompts import CHARACTER_CARD_PROMPT, ROUTER_PROMPT
-from soft_crm.graph.utils.helpers import AsteriskRemovalParser, get_chat_model
+from luxa.core.prompts import CHARACTER_CARD_PROMPT, ROUTER_PROMPT
+from luxa.graph.utils.helpers import AsteriskRemovalParser, get_chat_model
 
 
 class RouterResponse(BaseModel):
