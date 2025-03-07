@@ -1,5 +1,6 @@
 import sys
 import os
+import chainlit as cl
 
 # Con la linea sys.path.append(...) estamos agregando el directorio raíz del proyecto al path de python
 # para que pueda importar los módulos que necesite de nuestro proyecto.
@@ -11,8 +12,8 @@ import os
 # from interfaces.web import algun_modulo  # debe importar el modulo sin ningun problema
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../..")))
 
-# En este caso, estamos importando el módulo chainlit
-import chainlit as cl
+# Ruta absoluta al directorio de imágenes
+image_dir = os.path.join(os.path.dirname(__file__), "../images")
 
 from luxa.settings import settings
 

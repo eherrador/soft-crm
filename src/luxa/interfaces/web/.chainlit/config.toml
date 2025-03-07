@@ -53,14 +53,16 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "Assistant"
+name = "LUXA"
+
+logo = "./src/luxa/interfaces/web/assets/luxa-logo-transparent.png"
 
 # default_theme = "dark"
 
 # layout = "wide"
 
 # Description of the assistant. This is used for HTML tags.
-# description = ""
+description = "LUXA (Luxury + AI) → Bot para clientes de alto nivel."
 
 # Chain of Thought (CoT) display mode. Can be "hidden", "tool_call" or "full".
 cot = "full"
