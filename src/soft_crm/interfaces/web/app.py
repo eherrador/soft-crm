@@ -14,7 +14,16 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.
 # En este caso, estamos importando el módulo chainlit
 import chainlit as cl
 
+from soft_crm.settings import settings
+
+@cl.on_chat_start
+async def on_chat_start():
+    """Initialize the chat session"""
+    # thread_id = cl.user_session.get("id")
+    cl.user_session.set("thread_id", 1)
+
 @cl.on_message
 async def on_message(message: cl.Message):
+    """Handle text messages and images"""
     response = f"Recibí tu mensaje: {message.content}"
     await cl.Message(content=response).send()
